@@ -13,6 +13,7 @@
 \usepackage{amssymb}
 \usepackage{enumitem}
 \usepackage{subcaption}
+\usepackage[colorlinks=true, linkcolor=black, urlcolor=black]{hyperref}
 \usetikzlibrary{calc}
 \renewcommand{\baselinestretch}{1.2} %gianx dongf la 1.2
 \setlength{\parskip}{6pt}
@@ -65,10 +66,11 @@
 \vspace{1cm}
 \begin{tabular}{l l}
     \hspace{15pt}
-    \fontsize{14pt}{0pt}\selectfont Nhóm sinh viên: & \fontsize{20pt}{0pt}\selectfont Nguyễn Thái Sơn 20212951\\
-    &\fontsize{20pt}{0pt}\selectfont Nguyễn Văn Mừng 20212894\\
+    \fontsize{14pt}{0pt}\selectfont Nhóm sinh viên: & \fontsize{16pt}{0pt}\selectfont Nguyễn Thái Sơn 20212951\\
+    &\fontsize{16pt}{0pt}\selectfont Nguyễn Văn Mừng 20212894\\
+    \hspace{15pt}\\
     \hspace{15pt}
-    \fontsize{14pt}{0pt}\selectfont Giảng viên hướng dẫn: & \fontsize{20pt}{0pt}\selectfont PGS.TS Nguyễn Quốc Cường  \\
+    \fontsize{14pt}{0pt}\selectfont Giảng viên hướng dẫn: & \fontsize{16pt}{0pt}\selectfont PGS.TS Nguyễn Quốc Cường  \\
    
 
 \end{tabular}
@@ -101,8 +103,8 @@ Trong báo cáo này, chúng tôi đặt ra mục tiêu xây dựng một hệ t
 \cleardoublepage
 %\addtocontentsline{toc}{section}{\numberline{}Giới thiệu chung}
 \pagenumbering{arabic}
-\section*{Chương 1.Giới thiệu chung}
-\addcontentsline{toc}{section}{\numberline{}Chương 1.Giới thiệu chung}
+\section*{Chương 1. Giới thiệu chung}
+\addcontentsline{toc}{section}{\numberline{}Chương 1. Giới thiệu chung}
 \setcounter{section}{1}
 Trong thời đại số hóa hiện nay, công nghệ nhúng và cảm biến thông minh đang ngày càng phát triển mạnh mẽ, đem lại nhiều lợi ích trong các ứng dụng công nghiệp và Smart Home. Cảm biến hồng ngoại chủ động (PIR) với tính nhạy cao và giá thành hợp lý được coi là một công nghệ quan trọng trong việc phát hiện chuyển động. Dự án này nhằm xây dựng một hệ thống bao gồm mạch cứng PIR Array và phần mềm để thu phát, lưu trữ và xử lý dữ liệu từ các cảm biến PIR. Mục tiêu là nghiên cứu và triển khai giải pháp nhằm hỗ trợ các ứng dụng thực tế, đặc biệt là trong lĩnh vực nhúng và hệ thống Smart Home.
 \subsection{Lý do chọn đề tài }
@@ -125,8 +127,8 @@ Các thành phần cụ thể của hệ thống cần đạt được bao gồm
 \end{itemize}
 Yêu cầu về dữ liệu được ghi: Là dữ liệu của cả 5 con PIR trong PIR Array, được ghi theo thời gian thực với chu kì 10ms. Mỗi giây sẽ gửi server một gói dữ liệu bao gồm 500 giá trị của 5  PIR. 
 \cleardoublepage
-\section*{Chương 2.Mô tả bài toán}
-\addcontentsline{toc}{section}{\numberline{}Chương 2.Mô tả bài toán}
+\section*{Chương 2. Mô tả bài toán}
+\addcontentsline{toc}{section}{\numberline{}Chương 2. Mô tả bài toán}
 \setcounter{section}{2}
 \setcounter{subsection}{0}
 Đề tài này tập trung phát triển hệ thống cảm biến hồng ngoại chủ động (PIR) gồm mạch cứng, vi điều khiển ESP32, server và phần mềm quản lý. Mạch cứng với 5 PIR thu thập tín hiệu và trả về giá trị ADC từ 0-4095. Vi điều khiển đọc và gửi dữ liệu qua Wi-Fi mỗi 10ms. Server sử dụng C++ và SQLite để lưu trữ và xử lý dữ liệu, trong khi ứng dụng desktop được phát triển bằng NodeJS để quản lý, trực quan hóa và gán nhãn dữ liệu. Hệ thống đảm bảo thu thập dữ liệu ổn định, xử lý nhanh chóng và dễ mở rộng.
@@ -260,8 +262,8 @@ Sử dụng NodeJS để phát triển ứng dụng Desktop.
     \item Dependencies: ElectronJS, ReactJS, Tailwind CSS, Flowbite-React, …
 \end{itemize}
 \cleardoublepage
-\section*{Chương 3.Kết quả đạt được}
-\addcontentsline{toc}{section}{\numberline{}Chương 3.Kết quả đạt được}
+\section*{Chương 3. Kết quả đạt được}
+\addcontentsline{toc}{section}{\numberline{}Chương 3. Kết quả đạt được}
 \setcounter{section}{3}
 \setcounter{subsection}{0}
 Nguyên lý hoạt động của cảm biến vật cản hồng ngoại thụ động (PIR) dựa trên việc sử dụng một cặp cảm biến nhiệt điện để phát hiện năng lượng nhiệt từ sóng hồng ngoại trong môi trường xung quanh. Hai cảm biến này được đặt cạnh nhau và khi có sự chênh lệch về tín hiệu giữa chúng (ví dụ: khi một người di chuyển vào phòng), cảm biến hồng ngoại sẽ kích hoạt. Thiết bị có thể kích hoạt báo động, thông báo cho cơ quan chức năng (qua loa báo, đèn báo…) hoặc tự động bật/tắt đèn, quạt.
@@ -411,8 +413,8 @@ Nhóm đã hoàn thành các bước từ phát triển phần cứng, vi điề
     \caption{Một mẫu csv đầu ra, đã được gán nhãn.} \label{EV}
 \end{figure}
 \cleardoublepage
-\section*{Chương 4.Vấn đề còn tồn đọng và khó khăn}
-\addcontentsline{toc}{section}{\numberline{}Chương 4.Vấn đề còn tồn đọng và khó khăn}
+\section*{Chương 4. Vấn đề còn tồn đọng và khó khăn}
+\addcontentsline{toc}{section}{\numberline{}Chương 4. Vấn đề còn tồn đọng và khó khăn}
 \setcounter{section}{4}
 \setcounter{subsection}{0}
 \textbf{Nhiễu trong quá trình đọc ADC:}
@@ -444,8 +446,8 @@ Dù chưa kịp có những thử nghiệm chi tiết, nhưng về mặt dự đ
 \end{itemize}
 Trong đó, nguyên nhân thứ hai là nguyên nhân khả quan hơn.
 \cleardoublepage
-\section*{Chương 5:Kết luận chung và hướng phát triển}
-\addcontentsline{toc}{section}{\numberline{}Chương 5:Kết luận chung và hướng phát triển}
+\section*{Chương 5. Kết luận chung và hướng phát triển}
+\addcontentsline{toc}{section}{\numberline{}Chương 5. Kết luận chung và hướng phát triển}
 \setcounter{section}{5}
 \setcounter{subsection}{0}
 
