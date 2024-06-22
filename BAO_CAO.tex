@@ -65,8 +65,8 @@
 \vspace{1cm}
 \begin{tabular}{l l}
     \hspace{15pt}
-    \fontsize{14pt}{0pt}\selectfont Nhóm sinh viên: & \fontsize{20pt}{0pt}\selectfont Nguyễn Thái Sơn \\
-    &\fontsize{20pt}{0pt}\selectfont Nguyễn Văn Mừng\\
+    \fontsize{14pt}{0pt}\selectfont Nhóm sinh viên: & \fontsize{20pt}{0pt}\selectfont Nguyễn Thái Sơn 20212951\\
+    &\fontsize{20pt}{0pt}\selectfont Nguyễn Văn Mừng 20212894\\
     \hspace{15pt}
     \fontsize{14pt}{0pt}\selectfont Giảng viên hướng dẫn: & \fontsize{20pt}{0pt}\selectfont PGS.TS Nguyễn Quốc Cường  \\
    
@@ -109,7 +109,7 @@ Trong thời đại số hóa hiện nay, công nghệ nhúng và cảm biến t
 Hiện nay, nhu cầu về các thiết bị nhúng cũng như cảm biến thông minh ngày càng lớn do khả năng ứng dụng rộng rãi của nó: trong các quá trình điều khiển công nghiệp, trên xe cộ cũng như các hệ thống Smart Home. Một cảm biến thông minh là cảm biến có thể đo đạc được các chỉ số của môi trường xung quanh để tự đưa ra những quyết định điều khiển đúng đắn, giúp giảm tải sự can thiệp của con người và đem đến các trải nghiệm tiện lợi. 
 
 PIR (Passive infrared sensor) là cảm biến hồng ngoại phát có thể phát hiện chuyển động của vật thể trong 1 phạm vi nhất định. Với giá thành rẻ và tính nhỏ gọn, việc áp dụng PIR để làm cảm biến thông minh định vị được vị trí vật thể sẽ có tính ứng dụng rất cao trong các hệ thống nhúng nói chung và thiết bị Smart Home nói riêng. 
-\subsection{Mục đích của đè tài}
+\subsection{Mục đích của đề tài}
 Mục tiêu của đề tài này là đưa ra được một hệ thống mạch cứng và phần mềm để thu phát, lưu trữ và thao tác trên dữ liệu PIR bao gồm: 
 \begin{itemize}
     \item Một mạch cứng PIR Array bao gồm 5 PIR, thu tín hiệu hồng ngoại của môi trường xung quanh và trả về giá trị ADC trong khoảng từ 0 đến 4095
@@ -341,8 +341,8 @@ HTTP\_Module được phát triển để xử lý các yêu cầu HTTP, bao g�
 Server được triển khai với các API cơ bản để nhận, xử lý và lưu trữ dữ liệu từ các cảm biến PIR. Các API này cung cấp các chức năng cần thiết để giao tiếp với ESP32 và quản lý dữ liệu.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=10cm,height=5cm]{image/anh4.png}
-    \caption{Sơn gửi ảnh server} \label{EV}
+    \includegraphics[width=6cm,height=8cm]{image/anh13.png}
+    \caption{Server đang thu dữ liệu từ ESP32 gửi lên} \label{EV}
 \end{figure}
 \textbf{-Hoàn thành cơ chế quay, trực quan hóa dữ liệu và gán nhãn cho Desktop App:}
 
@@ -355,4 +355,137 @@ Nhóm đã hoàn thành các bước từ phát triển phần cứng, vi điề
     \includegraphics[width=12cm,height=7cm]{image/anh11.png}
     \caption{Giao diện app} \label{EV}
 \end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=12cm,height=7cm]{image/anh12.png}
+    \caption{Chức năng gán nhãn phục vụ cho bên AI} \label{EV}
+\end{figure}
+
+\subsection{Thiết lập bối cảnh thu data}
+\textbf{Thử nghiệm:}
+\begin{itemize}
+    \item Nguồn cấp cho vi điều khiển: chân USB
+    \item Vị trí: ngoài trời
+    \item Nhiệt độ: ~ 30 độ C
+    \item Diện tích thử nghiệm: 3 x 3 m\(^2\)
+\end{itemize}
+
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=5cm,height=7cm]{image/anh14.png}
+        \caption{Chia thành các vùng nhỏ} \label{EV1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=5cm,height=7cm]{image/anh15.png}
+        \caption{HIện trường} \label{EV2}
+    \end{subfigure}
+    \caption{Bối cảnh thu data}
+    \label{fig:two_graphs}
+\end{figure}
+\textbf{Kết quả:}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=8cm,height=6cm]{image/anh16.png}
+        \caption{Dữ liệu khi không có chuyển động} \label{EV1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=8cm,height=6cm]{image/anh17.png}
+        \caption{Đi từ ô 11 đến 32 (Hàng đầu tiên)} \label{EV2}
+    \end{subfigure}
+    \caption{Đồ thị thể hiện giá trị ADC các cảm biến}
+    \label{fig:two_graphs}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=7cm,height=10cm]{image/anh18.png}
+    \caption{Một mẫu csv đầu ra, đã được gán nhãn.} \label{EV}
+\end{figure}
+\cleardoublepage
+\section*{Chương 4.Vấn đề còn tồn đọng và khó khăn}
+\addcontentsline{toc}{section}{\numberline{}Chương 4.Vấn đề còn tồn đọng và khó khăn}
+\setcounter{section}{4}
+\setcounter{subsection}{0}
+\textbf{Nhiễu trong quá trình đọc ADC:}
+
+Trong quá trình thực hành thử nghiệm phát hiện việc kết nối Wifi và mở cổng Socket có ảnh hưởng đến số ADC mà ESP32 đọc được. Cụ thể, tốc độ kết nối Wifi càng yếu, thời gian mở cổng Socket càng lâu thì điện áp đọc được càng bị kéo xuống thấp, thậm chí là về 0 trong 1 khoảng thời gian.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=8cm,height=6cm]{image/anh19.png}
+        \caption{Dữ liệu kết nối kém} \label{EV1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=8cm,height=6cm]{image/anh20.png}
+        \caption{Dữ liệu kết nối tốt hơn} \label{EV2}
+    \end{subfigure}
+    \caption{Nhiễu trong quá trình đọc ADC}
+    \label{fig:two_graphs}
+\end{figure}
+\textbf{Dự đoán về nguyên nhân:\\}
+
+Dù chưa kịp có những thử nghiệm chi tiết, nhưng về mặt dự đoán, nhiễu lớn này gây ra có thể bởi một trong các lý do sau:
+\begin{itemize}
+    \item Việc sử dụng Wifi làm ảnh hưởng đến đầu đọc ADC hoặc phần hàm để lấy dữ liệu ADC.
+    \item Việc sử dụng Wifi đã lấy mất phần năng lượng để cung cấp điện áp cho chân nguồn 3.3V, dẫn tới sụt nguồn cho toàn bộ 5 con PIR.
+\end{itemize}
+Trong đó, nguyên nhân thứ hai là nguyên nhân khả quan hơn.
+\cleardoublepage
+\section*{Chương 5:Kết luận chung và hướng phát triển}
+\addcontentsline{toc}{section}{\numberline{}Chương 5:Kết luận chung và hướng phát triển}
+\setcounter{section}{5}
+\setcounter{subsection}{0}
+
+\subsection{Tóm tắt nội dung nghiên cứu}
+Trong bối cảnh cuộc cách mạng công nghiệp 4.0 đang diễn ra mạnh mẽ, việc ứng dụng các công nghệ cảm biến thông minh vào đời sống và sản xuất trở nên ngày càng cần thiết. Dự án "Mạch phần cứng và truyền thông RF cho hệ thống thu thập dữ liệu PIR" đã thành công trong việc thiết kế và triển khai một hệ thống hoàn chỉnh, bao gồm phần cứng, vi điều khiển, server và phần mềm quản lý.
+
+Chúng tôi đã tiến hành thiết kế một mạch cứng với 5 cảm biến PIR, cho phép thu thập tín hiệu hồng ngoại từ môi trường xung quanh và chuyển đổi chúng thành giá trị số. Hệ thống vi điều khiển ESP32 được lập trình để đọc và truyền tải dữ liệu qua kết nối Wi-Fi đến một server được xây dựng bằng ngôn ngữ C++, lưu trữ trong cơ sở dữ liệu SQLite. Phần mềm quản lý trên desktop, phát triển bằng NodeJS, cung cấp giao diện người dùng để điều khiển, trực quan hóa và gán nhãn dữ liệu.
+\subsection{ Ý nghĩa và ứng dụng thực tiễn}
+Hệ thống thu thập dữ liệu PIR này không chỉ là một giải pháp kỹ thuật hoàn chỉnh mà còn mở ra nhiều cơ hội ứng dụng thực tiễn trong đời sống và công nghiệp:
+\begin{itemize}
+    \item Ứng dụng trong nhà thông minh (Smart Home): Hệ thống có thể được tích hợp vào các thiết bị và hệ thống nhà thông minh để phát hiện chuyển động, điều khiển ánh sáng, an ninh, và nhiều ứng dụng khác.
+    \item Giám sát an ninh: Với khả năng phát hiện chuyển động chính xác, hệ thống có thể được sử dụng trong các hệ thống giám sát an ninh để phát hiện xâm nhập trái phép.
+
+
+\end{itemize}
+\subsection{Hướng phát triển trong tương lai}
+Dù đã đạt được nhiều kết quả đáng khích lệ, dự án vẫn còn nhiều tiềm năng phát triển:
+\begin{itemize}
+    \item Nâng cao độ chính xác và khả năng nhận diện: Tích hợp các thuật toán học máy để phân tích dữ liệu từ cảm biến, giúp nâng cao độ chính xác và khả năng nhận diện các đối tượng và hành vi phức tạp hơn
+    \item Mở rộng số lượng cảm biến: Tăng số lượng cảm biến trong mạch cứng để mở rộng phạm vi giám sát và thu thập dữ liệu.
+    \item Tối ưu hóa hiệu suất: Cải thiện hiệu suất của vi điều khiển và server để xử lý dữ liệu nhanh hơn và tiết kiệm năng lượng hơn.
+\end{itemize}
+\subsection{Lời cảm ơn}
+Chúng em xin chân thành cảm ơn PGS.TS Nguyễn Quốc Cường đã tận tình hướng dẫn và hỗ trợ chúng em trong suốt quá trình thực hiện đề tài này. Chúng em cũng xin cảm ơn các thầy cô và bạn bè đã luôn động viên và giúp đỡ chúng em hoàn thành dự án này. Dự án không chỉ là kết quả của những nỗ lực cá nhân mà còn là sự hợp tác và hỗ trợ từ nhiều phía.
+
+Dự án "Mạch phần cứng và truyền thông RF cho hệ thống thu thập dữ liệu PIR" đã mang lại cho chúng em nhiều kiến thức và kinh nghiệm quý báu, giúp chúng em hiểu sâu hơn về công nghệ cảm biến và hệ thống nhúng, mở ra nhiều cơ hội cho các nghiên cứu và ứng dụng trong tương lai.
+\cleardoublepage
+
+\begin{thebibliography}{99}
+
+    \bibitem{DB203B}
+    DB203B Datasheet
+    
+    \bibitem{Ngamakeura2021}
+    K. Ngamakeura, S. Yongchareon, J. Yu, and S. Islam, ``Passive infrared sensor dataset and deep learning models for device-free indoor localization and tracking,'' \textit{Journal/Conference Name}, 2021.
+    
+    \bibitem{Wu2021}
+    L. Wu and Y. Wang, ``Stationary and moving occupancy detection using the SLEEPIR sensor module and machine learning,'' \textit{Journal/Conference Name}, 2021.
+    
+    \end{thebibliography}
+    
+    
 \end{document}

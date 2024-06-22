@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.6.16)  17 JUN 2024 18:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.6.16)  22 JUN 2024 14:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -644,6 +644,57 @@ LaTeX Warning: Label `EV' multiply defined.
 
 LaTeX Warning: Label `EV' multiply defined.
 
+
+LaTeX Warning: Label `EV' multiply defined.
+
+
+LaTeX Warning: Label `EV1' multiply defined.
+
+
+LaTeX Warning: Label `sub@EV1' multiply defined.
+
+
+LaTeX Warning: Label `EV2' multiply defined.
+
+
+LaTeX Warning: Label `sub@EV2' multiply defined.
+
+
+LaTeX Warning: Label `fig:two_graphs' multiply defined.
+
+
+LaTeX Warning: Label `EV1' multiply defined.
+
+
+LaTeX Warning: Label `sub@EV1' multiply defined.
+
+
+LaTeX Warning: Label `EV2' multiply defined.
+
+
+LaTeX Warning: Label `sub@EV2' multiply defined.
+
+
+LaTeX Warning: Label `fig:two_graphs' multiply defined.
+
+
+LaTeX Warning: Label `EV' multiply defined.
+
+
+LaTeX Warning: Label `EV1' multiply defined.
+
+
+LaTeX Warning: Label `sub@EV1' multiply defined.
+
+
+LaTeX Warning: Label `EV2' multiply defined.
+
+
+LaTeX Warning: Label `sub@EV2' multiply defined.
+
+
+LaTeX Warning: Label `fig:two_graphs' multiply defined.
+
 )
 \openout1 = `BAO_CAO.aux'.
 
@@ -765,16 +816,18 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.82935> not available
 [1
 
 
-] (BAO_CAO.toc)
+] (BAO_CAO.toc
+
+[2
+
+
+])
 \tf@toc=\write4
 \openout4 = `BAO_CAO.toc'.
 
 
 
-[2
-
-
-]
+[3]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 115.
  (C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
@@ -791,17 +844,17 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 
 
 ]
-<image/anh_pir.jpg, id=30, 1243.64626pt x 1284.8pt>
+<image/anh_pir.jpg, id=34, 1243.64626pt x 1284.8pt>
 File: image/anh_pir.jpg Graphic file (type jpg)
 <use image/anh_pir.jpg>
 Package pdftex.def Info: image/anh_pir.jpg  used on input line 160.
 (pdftex.def)             Requested size: 199.15825pt x 199.16154pt.
-<image/anh2.png, id=31, 426.393pt x 247.52475pt>
+<image/anh2.png, id=35, 426.393pt x 247.52475pt>
 File: image/anh2.png Graphic file (type png)
 <use image/anh2.png>
 Package pdftex.def Info: image/anh2.png  used on input line 166.
 (pdftex.def)             Requested size: 284.53673pt x 142.26518pt.
-<image/anh_3.png, id=32, 352.31625pt x 177.66376pt>
+<image/anh_3.png, id=36, 352.31625pt x 177.66376pt>
 File: image/anh_3.png Graphic file (type png)
 <use image/anh_3.png>
 Package pdftex.def Info: image/anh_3.png  used on input line 172.
@@ -813,7 +866,7 @@ Package pdftex.def Info: image/anh_3.png  used on input line 172.
 [5 <./image/anh_3.png>]
 
 [6]
-<image/anh4.png, id=45, 628.14674pt x 280.04625pt>
+<image/anh4.png, id=48, 628.14674pt x 280.04625pt>
 File: image/anh4.png Graphic file (type png)
 <use image/anh4.png>
 Package pdftex.def Info: image/anh4.png  used on input line 242.
@@ -828,12 +881,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 246--248
 [7 <./image/anh4.png>]
 
 [8]
-<image/anh5.png, id=53, 393.26926pt x 169.8345pt>
+<image/anh5.png, id=56, 393.26926pt x 169.8345pt>
 File: image/anh5.png Graphic file (type png)
 <use image/anh5.png>
 Package pdftex.def Info: image/anh5.png  used on input line 272.
 (pdftex.def)             Requested size: 341.4454pt x 142.26868pt.
-<image/anh6.png, id=54, 677.53125pt x 346.896pt>
+<image/anh6.png, id=57, 677.53125pt x 346.896pt>
 File: image/anh6.png Graphic file (type png)
 <use image/anh6.png>
 Package pdftex.def Info: image/anh6.png  used on input line 281.
@@ -844,17 +897,17 @@ Package pdftex.def Info: image/anh6.png  used on input line 281.
 
 
  <./image/anh5.png>]
-<image/anh7.png, id=59, 576.35326pt x 389.0535pt>
+<image/anh7.png, id=63, 576.35326pt x 389.0535pt>
 File: image/anh7.png Graphic file (type png)
 <use image/anh7.png>
 Package pdftex.def Info: image/anh7.png  used on input line 289.
 (pdftex.def)             Requested size: 204.85748pt x 142.26157pt.
-<image/anh8.png, id=60, 543.2295pt x 331.83975pt>
+<image/anh8.png, id=64, 543.2295pt x 331.83975pt>
 File: image/anh8.png Graphic file (type png)
 <use image/anh8.png>
 Package pdftex.def Info: image/anh8.png  used on input line 295.
 (pdftex.def)             Requested size: 204.85443pt x 142.26804pt.
-<image/anh10.png, id=61, 332.442pt x 247.52475pt>
+<image/anh10.png, id=65, 332.442pt x 247.52475pt>
 File: image/anh10.png Graphic file (type png)
 <use image/anh10.png>
 Package pdftex.def Info: image/anh10.png  used on input line 306.
@@ -871,21 +924,111 @@ Underfull \hbox (badness 10000) in paragraph at lines 318--320
 
 
 [10 <./image/anh6.png> <./image/anh7.png> <./image/anh8.png> <./image/anh10.png>]
-File: image/anh4.png Graphic file (type png)
-<use image/anh4.png>
-Package pdftex.def Info: image/anh4.png  used on input line 344.
-(pdftex.def)             Requested size: 284.53244pt x 142.27045pt.
+<image/anh13.png, id=73, 245.11575pt x 275.22826pt>
+File: image/anh13.png Graphic file (type png)
+<use image/anh13.png>
+Package pdftex.def Info: image/anh13.png  used on input line 344.
+(pdftex.def)             Requested size: 170.7196pt x 227.62886pt.
 
 
 [11]
-<image/anh11.png, id=73, 690.78075pt x 387.24675pt>
+<image/anh11.png, id=77, 690.78075pt x 387.24675pt>
 File: image/anh11.png Graphic file (type png)
 <use image/anh11.png>
 Package pdftex.def Info: image/anh11.png  used on input line 355.
 (pdftex.def)             Requested size: 341.44739pt x 199.17134pt.
+<image/anh12.png, id=78, 417.35925pt x 225.84375pt>
+File: image/anh12.png Graphic file (type png)
+<use image/anh12.png>
+Package pdftex.def Info: image/anh12.png  used on input line 360.
+(pdftex.def)             Requested size: 341.44073pt x 199.18076pt.
 
 
-[12 <./image/anh11.png>] (BAO_CAO.aux)
+[12 <./image/anh13.png> <./image/anh11.png>]
+<image/anh14.png, id=84, 151.767pt x 224.037pt>
+File: image/anh14.png Graphic file (type png)
+<use image/anh14.png>
+Package pdftex.def Info: image/anh14.png  used on input line 378.
+(pdftex.def)             Requested size: 142.26266pt x 199.1735pt.
+<image/anh15.png, id=85, 215.6055pt x 290.2845pt>
+File: image/anh15.png Graphic file (type png)
+<use image/anh15.png>
+Package pdftex.def Info: image/anh15.png  used on input line 384.
+(pdftex.def)             Requested size: 142.27045pt x 199.16702pt.
+<image/anh16.png, id=86, 386.04225pt x 284.262pt>
+File: image/anh16.png Graphic file (type png)
+<use image/anh16.png>
+Package pdftex.def Info: image/anh16.png  used on input line 395.
+(pdftex.def)             Requested size: 227.62747pt x 170.719pt.
+
+Overfull \hbox (22.76901pt too wide) in paragraph at lines 395--396
+ [][] 
+ []
+
+<image/anh17.png, id=87, 407.72325pt x 308.352pt>
+File: image/anh17.png Graphic file (type png)
+<use image/anh17.png>
+Package pdftex.def Info: image/anh17.png  used on input line 401.
+(pdftex.def)             Requested size: 227.62044pt x 170.71863pt.
+
+Overfull \hbox (22.76198pt too wide) in paragraph at lines 401--402
+ [][] 
+ []
+
+
+
+[13 <./image/anh12.png> <./image/anh14.png> <./image/anh15.png>]
+<image/anh18.png, id=94, 278.2395pt x 284.262pt>
+File: image/anh18.png Graphic file (type png)
+<use image/anh18.png>
+Package pdftex.def Info: image/anh18.png  used on input line 410.
+(pdftex.def)             Requested size: 199.16899pt x 284.53455pt.
+
+
+[14 <./image/anh16.png> <./image/anh17.png> <./image/anh18.png>]
+<image/anh19.png, id=101, 272.217pt x 172.2435pt>
+File: image/anh19.png Graphic file (type png)
+<use image/anh19.png>
+Package pdftex.def Info: image/anh19.png  used on input line 426.
+(pdftex.def)             Requested size: 227.63058pt x 170.72395pt.
+
+Overfull \hbox (22.77213pt too wide) in paragraph at lines 426--427
+ [][] 
+ []
+
+<image/anh20.png, id=102, 215.6055pt x 149.358pt>
+File: image/anh20.png Graphic file (type png)
+<use image/anh20.png>
+Package pdftex.def Info: image/anh20.png  used on input line 432.
+(pdftex.def)             Requested size: 227.63272pt x 170.73022pt.
+
+Overfull \hbox (22.77426pt too wide) in paragraph at lines 432--433
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 438--439
+
+ []
+
+
+
+[15
+
+
+ <./image/anh19.png> <./image/anh20.png>]
+
+[16
+
+
+]
+
+[17]
+
+[18
+
+
+] (BAO_CAO.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 1
 L3 programming layer <2024-05-27>
@@ -896,17 +1039,17 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17587 strings out of 473919
- 344778 string characters out of 5727425
- 1934908 words of memory out of 5000000
- 40130 multiletter control sequences out of 15000+600000
- 606999 words of font info for 80 fonts, out of 8000000 for 9000
+ 17658 strings out of 473919
+ 346276 string characters out of 5727425
+ 1935908 words of memory out of 5000000
+ 40198 multiletter control sequences out of 15000+600000
+ 608707 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,8n,107p,1197b,504s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/urwvn/utmb8v.pfb><C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/urwvn/utmbi8v.pfb><C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/urwvn/utmr8v.pfb>
-Output written on BAO_CAO.pdf (15 pages, 1949480 bytes).
+ 108i,9n,107p,1197b,504s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/urwvn/utmb8v.pfb><C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/urwvn/utmbi8v.pfb><C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/urwvn/utmr8v.pfb><C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/urwvn/utmri8v.pfb>
+Output written on BAO_CAO.pdf (22 pages, 3748281 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
+ 143 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 68 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 
